@@ -1,0 +1,10 @@
+a(href="/create") Create title
+form(action="/todos" , method="GET")
+  input(type = "text",name ="q",value = q)
+  button search
+ul
+  each list in todoslist
+    li
+      span= list.title
+        i 
+          a(href="/todos/" + list.id + "/delete" ) Delete
